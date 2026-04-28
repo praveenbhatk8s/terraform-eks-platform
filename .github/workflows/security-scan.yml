@@ -1,0 +1,9 @@
+name: Security Scan
+on: [pull_request]
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: terraform fmt -check -recursive
+      - run: echo "Run tfsec / checkov / trivy here"
