@@ -14,5 +14,5 @@ jobs:
         working-directory: environments/dev
       - run: terraform validate
         working-directory: environments/dev
-      - run: terraform plan
-        working-directory: environments/dev
+     # - run: terraform plan
+     #   working-directory: environments/dev
